@@ -3,9 +3,7 @@ $(document).ready(function() {
 
   $('.addDancerButton').on('click', function(event) {
     var dancerMakerFunctionName = $(this).data('dancer-maker-function-name');
-    console.log(dancerMakerFunctionName)
     var dancerMakerFunction = window[dancerMakerFunctionName];
-    console.log(dancerMakerFunction)
 
     var dancer = new dancerMakerFunction(
       $("body").height() * Math.random(),
@@ -14,4 +12,13 @@ $(document).ready(function() {
     );
     $('body').append(dancer.$node);
   });
+
+
+  $('.lineupDancers').on('click', function(event){
+    $('span').css({
+      'position' : 'center',
+      'float' : 'left',
+      'top' : '50%'
+    })
+  })
 });

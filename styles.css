@@ -3,13 +3,15 @@ body, html{
 }
 body{
   margin: 0px;
-  background-color:#444;
+  background-image: url('http://cdn.shopify.com/s/files/1/0065/4917/6438/products/inside-an-ice-cream-parlor-background_c9325e58-6fed-4b88-859a-fa30b591a8ac_1200x1200.jpg?v=1549230936');
+  background-size:cover;
   font-size: 18px;
 }
+
 body, a:link, a:visited, a:active{
   color: lightblue;
 }
-.title, .addDancerButton, .iceCreamButton{
+.title, .addDancerButton, .iceCreamButton, .lineupDancers{
   padding:5px 12px;
   float:right;
 }
@@ -21,23 +23,28 @@ body, a:link, a:visited, a:active{
   background-color: #777;
 }
 .dancer{
-  border:10px solid red;
+  /* border:10px solid red; */
   border-radius:10px;
   position:absolute;
 }
 
 .iceCreamDancer {
-  border:10px solid dodgerblue;
+  /* border:10px solid dodgerblue; */
   border-radius:10px;
-  position:flex center;
-  width: 20px;
-  height: 20px;
+  position:absolute;
 }
 
 .anotherDancer {
   border:10px solid limegreen;
   border-radius:10px;
-  position:relative;
-  width: 40px;
-  height: 40px;
+  position:absolute;
+}
+
+.transform {
+  position: center;
+}
+
+.adam {
+  height: 35%;
+  width: 35%;
 }

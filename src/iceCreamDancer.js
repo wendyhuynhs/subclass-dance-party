@@ -1,6 +1,6 @@
 var IceCreamDancer = function(top, left, timeBetweenSteps) {
   Dancer.call(this, top, left, timeBetweenSteps);
-  this.$node = $('<span class="iceCreamDancer"></span>');
+  this.$node.addClass('iceCreamDancer').prepend('<img class="adam" src=\'adam.jpg\'/>');
 }
 
 IceCreamDancer.prototype = Object.create(Dancer.prototype)
